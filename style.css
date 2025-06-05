@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #fffaf9;
+  color: #333;
+}
+header {
+  background-image: url(img17.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+  padding: 20rem 1rem;
+  text-align: center;
+  color: white;
+}
+.hd1{
+  height: 100%;
+  width: 100%;
+  background-color: #333333bb;
+}
+header h1 {
+  font-size: 2.5rem;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(white 60%,#ffb6b9 40%);
+  color: transparent;
+}
+header p {
+  font-size: 1.2rem;
+}
+section {
+  padding: 2rem 1rem;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ff6f61;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 1rem;
+}
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: .4s;
+}
+.gallery img:hover {
+    height: 350px;
+    transform: scale(1.05);
+}
+.spotlight {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.spotlight img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+.spotlight .description {
+  max-width: 500px;
+}
+.tips {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+}
+.tips li {
+  background: #ffe0e0;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border-radius: 5px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 400px;
+  margin: auto;
+}
+form input, form textarea, form button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+form button {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.cu{
+  display: flex;
+}
+.cu1{
+  width: 50%;
+}
+.cu2{
+  width: 50%;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ffb6b9;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .spotlight {
+    flex-direction: column;
+  }
+  .spotlight img {
+    width: 90%;
+  }
+  .cu1{
+    padding: 40px
+  }
+  .cu1 h2{
+    font-size: 0.8rem;
+  }
+}
